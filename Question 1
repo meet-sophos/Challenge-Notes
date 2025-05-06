@@ -1,0 +1,158 @@
+```
+nuclei@DESKTOP-LA3GQIU:/mnt/c/Users/Nuclei/Downloads/Challenges-main/Question 1$ exiftool -v Sophos.png
+  ExifToolVersion = 12.76
+  FileName = Sophos.png
+  Directory = .
+  FileSize = 275061
+  FileModifyDate = 1745218530
+  FileAccessDate = 1746511059
+  FileInodeChangeDate = 1746509863
+  FilePermissions = 33279
+  FileType = PNG
+  FileTypeExtension = PNG
+  MIMEType = image/png
+PNG IHDR (13 bytes):
+  + [BinaryData directory, 13 bytes]
+  | ImageWidth = 800
+  | ImageHeight = 500
+  | BitDepth = 8
+  | ColorType = 6
+  | Compression = 0
+  | Filter = 0
+  | Interlace = 0
+PNG pHYs (9 bytes):
+  + [BinaryData directory, 9 bytes]
+  | PixelsPerUnitX = 3780
+  | PixelsPerUnitY = 3780
+  | PixelUnits = 1
+PNG tEXt (51 bytes):
+  Comment = xr:d:DAFY2poqRjc:5,j:45933120943,t:23012710
+PNG iTXt (1182 bytes):
+  + [XMP directory, 1160 bytes]
+  | XMPToolkit = Image::ExifTool 12.47
+  | [adding XMP-Attrib:AdsCreated] (Ads/Created)
+  | AdsCreated = 2023-01-27
+  | [adding XMP-Attrib:AdsExtId] (Ads/ExtId)
+  | AdsExtId = 9457ad2e-4ff5-45c6-a58b-8c0eb376a384
+  | [adding XMP-Attrib:AdsFbId] (Ads/FbId)
+  | AdsFbId = 525265914179580
+  | [adding XMP-Attrib:AdsTouchType] (Ads/TouchType)
+  | AdsTouchType = 2
+  | Title = Sophos Intercept X Banner - 1
+  | Author = Emma Meredith
+  | CreatorTool = Canva
+PNG eXIf (248 bytes):
+  + [TIFF directory]
+  | ExifByteOrder = MM
+  | + [IFD0 directory with 8 entries]
+  | | 0)  ImageDescription = 4y3rs_0f
+  | | 1)  Make = 5O
+  | | 2)  Model = PH0
+  | | 3)  ResolutionUnit = 2
+  | | 4)  Artist = v3r3d_Th
+  | | 5)  YCbCrPositioning = 1
+  | | 6)  Copyright = 3tadata_L
+  | | 7)  ExifOffset (SubDirectory) -->
+  | | + [ExifIFD directory with 6 entries]
+  | | | 0)  ExifVersion = 0232
+  | | | 1)  ComponentsConfiguration = 1 2 3 0
+  | | | 2)  UserComment = ASCII_D4rk}
+  | | | 3)  FlashpixVersion = 0100
+  | | | 4)  OwnerName = r0ugh_M
+  | | | 5)  LensSerialNumber = S{Unc0
+PNG IDAT (1 chunk, total 273466 bytes)
+PNG IEND (end of image)
+```
+
+Flag:
+```
+flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
+```
+
+### 1. **Comment (PNG tEXt):**
+
+`xr:d:DAFY2poqRjc:5,j:45933120943,t:23012710`
+
+Could be base64 or an ID — may not be directly useful for a flag but worth decoding.
+
+---
+
+### 2. **XMP Metadata (iTXt):**
+
+Some advertising-related fields, probably from Canva. Possibly irrelevant.
+
+---
+
+### 3. **Exif (eXIf block):**
+
+Here’s where things look interesting — likely obfuscated:
+
+```
+- ImageDescription = 4y3rs_0f
+    
+- Make = 5O
+    
+- Model = PH0
+    
+- Artist = v3r3d_Th
+    
+- Copyright = 3tadata_L
+    
+- UserComment = ASCII_D4rk}
+    
+- OwnerName = r0ugh_M
+    
+- LensSerialNumber = S{Unc0
+```
+
+Let's reconstruct this, assuming it's a rearranged or segmented flag:
+
+---
+
+### 4. **Reconstructing the Flag:**
+
+Combining these fields in an intelligent order (likely a sentence or CTF flag format like `flag{...}`):
+
+`S{Unc0r0ugh_Mv3r3d_Th4y3rs_0f5OPH03tadata_LASCII_D4rk}`
+
+Now let's attempt to reorder or clean it up:
+
+---
+
+#### Likely Correct Flag:
+
+
+```
+flag{S{Unc0r0ugh_Mv3r3d_Th4y3rs_0f5OPH03tadata_LASCII_D4rk}}
+```
+
+Or better parsed as:
+
+```
+flag{Unc0r0ugh_M_v3r3d_Th_4y3rs_0f_5OPH0_3tadata_L_ASCII_D4rk}
+```
+
+Still awkward, but could also be:
+
+```
+flag{Unc0r0ugh_M_v3r3d_Th_4y3rs_0f_5OPH0_3tadata_L_ASCII_D4rk}
+```
+
+Could be interpreted as:
+
+```
+Uncorough_M vered_Thayers of SOPHO metadata L ASCII_Dark
+```
+
+That seems closer to:
+
+```
+flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
+```
+
+### Final Flag (likely):
+
+```
+flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
+```
+
