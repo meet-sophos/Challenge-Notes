@@ -232,7 +232,7 @@ Flag :
 flag{SOPHOSBEEPBOOPFLAGINSIGHT}
 ```
 
-![[Pasted image 20250506125416.png]]
+![](Pasted image 20250506125416.png)
 
 # Fourth:
 
