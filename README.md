@@ -1,4 +1,4 @@
-# First :
+# First Question :
 
 ```
 nuclei@DESKTOP-LA3GQIU:/mnt/c/Users/Nuclei/Downloads/Challenges-main/Question 1$ exiftool -v Sophos.png
@@ -148,18 +148,18 @@ Uncorough_M vered_Thayers of SOPHO metadata L ASCII_Dark
 
 That seems closer to:
 
-`flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}`
-
----
+```
+flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
+```
 
 ### Final Flag (likely):
 
-CopyEdit
+```
+flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
+```
 
-`flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}`
 
-
-# Second :
+# Second Question :
 
 
 ```
@@ -190,7 +190,7 @@ PNGs always have these first eight bytes: ```
 89 50 4E 47 0D 0A 1A 0A
 ```
 
-![[Pasted image 20250506121614.png]]
+![Pasted image 20250506121614](https://github.com/user-attachments/assets/9534de77-0e75-4c53-8285-a026ad3854ad)
 
 ```
 nuclei@DESKTOP-LA3GQIU:/mnt/c/Users/Nuclei/Downloads/Challenges-main/Question 2$ pngcheck msg\ hidden\ 1.png
@@ -225,16 +225,17 @@ No errors detected in msg hidden 1.png (433 chunks, 57.5% compression).
 ```
 
 
-# Third:
+# Third Question :
 
 Flag :
 ```
 flag{SOPHOSBEEPBOOPFLAGINSIGHT}
 ```
 
-![](Pasted image 20250506125416.png)
+![Pasted image 20250506125416](https://github.com/user-attachments/assets/8b665080-fbf1-431b-9f48-5edd3d1f07f5)
 
-# Fourth:
+
+# Fourth Question :
 
 ```
 nuclei@DESKTOP-LA3GQIU:/mnt/c/Users/Nuclei/Downloads/Challenges-main/Question 4$ file flag.jpg
@@ -353,7 +354,8 @@ That sequence is probably the **password** But my bad luck it's not.
 
 # Fifth: 
 
-![[Pasted image 20250506142916.png]]
+![Pasted image 20250506142916](https://github.com/user-attachments/assets/9cce2157-3815-403b-a818-c2c676917709)
+
 
 ```
 #EAD0D6 #E39BE4 #00C3E3 #863807 #FEE744 #FF2787 #FE6D0E #B120F6 #00C3E3 #0713D3
@@ -409,21 +411,6 @@ Let's arrange the characters to match a plausible phrase.
 Here's one meaningful reconstruction:
 
 `"PORTAL GLITCH OPEN HACK DEVICE"`
-
-Let's verify that this uses letters from the set:
-
-#### Letters used:
-
-- PORTAL → ✅
-
-- GLITCH → ✅
-
-- OPEN → ✅
-
-- HACK → ✅
-
-- DEVICE → ✅
-
 
 That’s 27 letters — fits well with your total of 30 characters.
 
