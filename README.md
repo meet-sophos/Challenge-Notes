@@ -223,7 +223,33 @@ File: msg hidden 1.png (3521504 bytes)
 No errors detected in msg hidden 1.png (433 chunks, 57.5% compression).
   
 ```
+```
+nuclei@DESKTOP-LA3GQIU:/mnt/c/Users/Nuclei/Downloads/Challenges-main/Question 2$ zsteg msg\ hidden\ 1.png
+b1,r,lsb,xy         .. text: "z]ZWRYCs"
+b1,rgb,lsb,xy       .. text: "5OPH0S{H3x_M4n1pul4t10n_P0w3r}"
+b1,bgr,lsb,xy       .. file: OpenPGP Secret Key
+b2,r,msb,xy         .. text: "QUDQUUUUUUUUPUUUUUUUUUUUUAUUUDUU"
+b2,g,msb,xy         .. text: "PEEPPTTQ"
+b2,b,msb,xy         .. text: "UUPUUUUUUUUUUUUAUU"
+b2,bgr,msb,xy       .. file: PGP Secret Sub-key -
+b3,rgb,msb,xy       .. file: OpenPGP Public Key
+b3,rgba,lsb,xy      .. text: "w7s73q77q"
+b3,rgba,msb,xy      .. file: OpenPGP Public Key
+b3,abgr,msb,xy      .. text: "p\rGvdGvd"
+b4,r,msb,xy         .. text: "Bd5GV@bU33U3w"
+b4,g,msb,xy         .. text: "s@b5s33swPQ"
+b4,b,lsb,xy         .. text: "D#%gvffgvgw"
+b4,b,msb,xy         .. text: " geS#6VS& p"
+b4,rgb,msb,xy       .. text: "0#fP4cTSf\"1p "
+b4,bgr,msb,xy       .. text: "&S`3TdV#b0!p"
+b4,rgba,lsb,xy      .. text: "&/IOIOH/I?H/j_kok"
+b4,abgr,msb,xy      .. text: "NOF/)/)O!"
+```
 
+Flag :
+```
+5OPH0S{H3x_M4n1pul4t10n_P0w3r}
+```
 
 # Third Question :
 
