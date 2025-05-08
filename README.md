@@ -302,81 +302,31 @@ MAP.txt.txt
 ⍀⟒⋔⟟⋏⎅⟒⍀ ⏁⊑⏃⏁ ⍜⎍⍀ ☌⌿⌇ ⟟⌇ ⏃ ⌰⟟⏁⏁⌰⟒ ⎎⎍⋏☍⊬, ⟟⏁ ⍜⋏⌰⊬ ⏁⏃☍⟒⌇ ⏁⊑⟒ ⎎⟟⍀⌇⏁ ⌰⟒⏁⏁⟒⍀ ⍜⎎ ⟒⏃☊⊑ ⎅⟟⍀⟒☊⏁⟟⍜⋏ ⍙⟒ ⍙⏃⋏⏁ ⏁⍜ ☌⍜ (⌇⏁⎍⌿⟟⎅ ⋔⟒⋔⍜⍀⊬ ⋔⏃⋏⏃☌⟒⋔⟒⋏⏁)
 ```
 
-The symbols in your text like `⏃`, `⌰`, `⟒`, etc., are part of the **Standard Galactic Alphabet (SGA)**. This is a **monoalphabetic cipher**, meaning each symbol represents a regular English letter.
+![image](https://github.com/user-attachments/assets/2f240c4e-d7aa-4fc6-88de-ff1f1f30305c)
 
-Here’s a partial mapping:
-
-|SGA|Latin|
-|---|---|
-|⏃|A|
-|⏁|B|
-|⍀|C|
-|⎅|D|
-|⟒|E|
-|⌰|F|
-|⎎|G|
-|⍙|H|
-|⟟|I|
-|⎍|J|
-|⌿|K|
-|⍦|L|
-|⍝|M|
-|⋏|N|
-|⍜|O|
-|⍴|P|
-|⍳|Q|
-|⍀|R|
-|⏂|S|
-|⏁|T|
-|⏃|U|
-|⎍|V|
-|⍘|W|
-|⌇|X|
-|⌿|Y|
-|⍀|Z|
-
-Convert symbol by symbol:
-
+Decoded String :
 ```
-⋔   = M ⏃   = A ⌿   = K  → MAK:  ⌰⟒⎎⏁ = FEGT ⎍⌿ = VK ⎅⍜⍙⋏ = D O H N ⌰⟒⎎⏁ = FEGT ⎅⍜⍙⋏ = D O H N ⍀⟟☌⊑⏁ = C I X Y T ⍀⟟☌⊑⏁ = C I X Y T ⎅⍜⍙⋏ = D O H N ⌰⟒⎎⏁ = FEGT ⎍⌿ = V K ⌰⟒⎎⏁ = FEGT ⍀⟟☌⊑⏁ = C I X Y T ⎍⌿ = V K
+MAP: LEFT, UP, DOWN, LEFT, DOWN, RIGHT, RIGHT, DOWN, LEFT, UP, LEFT, RIGHT, UP
+
+REMINDER THAT OUR GPS IS A LITTLE FUNKY, IT ONLY TAKES THE FIRST LETTER OF EACH DIRECTION WE WANT TO GO (STUPID MEMORY MANAGEMENT)
 ```
 
-So this part reads:
-
+Afted Usign PAssword to Unzip GPS.zip
 ```
-MAK: FEGT, VK, DOHN, FEGT, DOHN, CIXYT, CIXYT, DOHN, FEGT, VK, FEGT, CIXYT, VK
-```
-
-
-`⍀⟒⋔⟟⋏⎅⟒⍀ = REMINDER   ⏁⊑⏃⏁ = THAT   ⍜⎍⍀ = OUR   ☌⌿⌇ = KEYX   ⟟⌇ = IS   ⏃ = A   ⌰⟟⏁⏁⌰⟒ = FITTEFE   ⎎⎍⋏☍⊬ = GVNXWY   ⟟⏁ = IT   ⍜⋏⌰⊬ = ONFYW   ⏁⏃☍⟒⌇ = TAFXEX   ⏁⊑⟒ = THE   ⎎⟟⍀⌇⏁ = GIRXT   ⌰⟒⏁⏁⟒⍀ = FETTECER   ⍜⎎ = OV   ⟒⏃☊⊑ = EAUY   ⎅⟟⍀⟒☊⏁⟟⍜⋏ = DIREQTION   ⍙⟒ = HE   ⍙⏃⋏⏁ = WANT   ⏁⍜ = TO   ☌⍜ = XO  (⌇⏁⎍⌿⟟⎅ = XTUVID   ⋔⟒⋔⍜⍀⊬ = MEMOREY   ⋔⏃⋏⏃☌⟒⋔⟒⋏⏁ = MANAGAMENT)`
-
-Cleaned up and corrected for likely letter misreads and logic:
-
-```
-REMINDER THAT OUR KEYS IS A LITTLE FUNKY, IT ONLY TAKES THE FIRST LETTER OF EACH DIRECTION WE WANT TO GO (STUPID MEMORY MANAGEMENT)
+LUDLDRRDLULRU
 ```
 
----
-
-#### Final Message (Human-readable)
+Content of myrequest.txt
 
 ```
-MAK: FEGT, VK, DOHN, FEGT, DOHN, CIXYT, CIXYT, DOHN, FEGT, VK, FEGT, CIXYT, VK
-
-Reminder that our keys is a little funky, it only takes the first letter of each direction we want to go (stupid memory management)
+5⍜⌿⊑0⌇{⎅3☊0⋔⌿1⌰3⎅_⏁⊑3_⌰0☊☍}
 ```
 
-### The final instruction is: **Take the first letter of each group**
+Final Flag:
 
-**So:**
-
-`FEGT → F   VK → V   DOHN → D   FEGT → F   DOHN → D   CIXYT → C   CIXYT → C   DOHN → D   FEGT → F   VK → V   FEGT → F   CIXYT → C   VK → V`  
-
-Which gives:
-
-**FVDFDCCDFVFCV**
-
-That sequence is probably the **password** But my bad luck it's not.
+```
+5OPH0S{D3C0MP1L3D_TH3_L0CK}
+```
 
 # Fifth: 
 
