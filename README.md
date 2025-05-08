@@ -332,66 +332,12 @@ Final Flag:
 
 ![Pasted image 20250506142916](https://github.com/user-attachments/assets/9cce2157-3815-403b-a818-c2c676917709)
 
+As hint suggests on Gravity Falls Color Code using dcode to decode it and final flag is :
 
-```
-#EAD0D6 #E39BE4 #00C3E3 #863807 #FEE744 #FF2787 #FE6D0E #B120F6 #00C3E3 #0713D3
-#0713D3 #FFFCF3 #9E3882 #B7EFFB #0713D0 #B7EFFB #B7EFFB #C3D2EA #FF2A16 #9E3882 
-#B7EFFB #C3D2EA #FF2A16 #C3D2EA #FFC699 #FF2A16 #FEE744 #E39BE4 #C3D2EA #B7EFFB
-```
+![Pasted image 20250508115442](https://github.com/user-attachments/assets/bd8f15c0-b784-4ea7-b3fd-4422f79df0b5)
 
-### Step-by-Step Decoding Strategy
-
-Since we have **30 colors**, and color-based CTF challenges often involve **mapping colors to characters**
-
-### Step 1: List Unique Colors
-
-We'll assign characters (A, B, C, ...) to each unique color.
 
 
 ```
-#00C3E3 → A #0713D0 → B #0713D3 → C #863807 → D #9E3882 → E #B120F6 → F #B7EFFB → G #C3D2EA → H #E39BE4 → I #EAD0D6 → J #FF2A16 → K #FF2787 → L #FFFCF3 → M #FFC699 → N #FE6D0E → O #FEE744 → P
-```
-
-There are **16 unique colors**, so this gives us:
-
-```
-A: #00C3E3  B: #0713D0  C: #0713D3  D: #863807  E: #9E3882  F: #B120F6  G: #B7EFFB  H: #C3D2EA  I: #E39BE4  J: #EAD0D6  K: #FF2A16  L: #FF2787  M: #FFFCF3  N: #FFC699  O: #FE6D0E  P: #FEE744
-```
-
----
-
-### Step 2: Translate the Sequence
-
-Original color sequence translated to letters:
-
-```
-J I A D P L O F A C C M E G C G G H K E G H K H N K P I H G
-```
-
-### Step 3: Anagram + Heuristic Reconstruction
-
-Let’s identify possible English words from substrings:
-
-- **"PORTAL"** from: `P, O, R, T, A, L` → Yes, letters exist.
-
-- **"GLITCH"** → G, L, I, T, C, H → All present.
-
-- **"OPEN"** → O, P, E, N → Present.
-
-- **"HACK"**, **"CODE"**, **"SHIFT"** → plausible too.
-
-###  Step 4: Reconstructing a Possible Message
-
-Let's arrange the characters to match a plausible phrase.
-
-Here's one meaningful reconstruction:
-
-`"PORTAL GLITCH OPEN HACK DEVICE"`
-
-That’s 27 letters — fits well with your total of 30 characters.
-
-###  Final Decoded Message Guess:
-
- ```
-PORTAL GLITCH – OPEN HACK DEVICE
+5OPH0S{GRAVITYFALLSCOLORDECODEDWEIRDO}
 ```
