@@ -68,7 +68,7 @@ PNG IEND (end of image)
 
 Flag:
 ```
-flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
+flag{Unc0vered_Th3_M3tadata_L4y3rs_0f_D4rk}
 ```
 
 ### 1. **Comment (PNG tEXt):**
