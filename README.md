@@ -68,7 +68,7 @@ PNG IEND (end of image)
 
 Flag:
 ```
-flag{Unc0vered_Th3_M3tadata_L4y3rs_0f_D4rk}
+5OPH0S{Unc0vered_Th3_M3tadata_L4y3rs_0f_D4rk}
 ```
 
 ### 1. **Comment (PNG tEXt):**
@@ -115,48 +115,7 @@ Let's reconstruct this, assuming it's a rearranged or segmented flag:
 
 Combining these fields in an intelligent order (likely a sentence or CTF flag format like `flag{...}`):
 
-`S{Unc0r0ugh_Mv3r3d_Th4y3rs_0f5OPH03tadata_LASCII_D4rk}`
-
-Now let's attempt to reorder or clean it up:
-
----
-
-#### Likely Correct Flag:
-
-
-```
-flag{S{Unc0r0ugh_Mv3r3d_Th4y3rs_0f5OPH03tadata_LASCII_D4rk}}
-```
-
-Or better parsed as:
-
-```
-flag{Unc0r0ugh_M_v3r3d_Th_4y3rs_0f_5OPH0_3tadata_L_ASCII_D4rk}
-```
-
-Still awkward, but could also be:
-
-```
-flag{Unc0r0ugh_M_v3r3d_Th_4y3rs_0f_5OPH0_3tadata_L_ASCII_D4rk}
-```
-
-Could be interpreted as:
-
-```
-Uncorough_M vered_Thayers of SOPHO metadata L ASCII_Dark
-```
-
-That seems closer to:
-
-```
-flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
-```
-
-### Final Flag (likely):
-
-```
-flag{Uncovered_The_Layers_of_SOPHOS_Metadata_ASCII_D4rk}
-```
+`5OPH0S{Unc0vered_Th3_M3tadata_L4y3rs_0f_D4rk}`
 
 
 # Second Question :
