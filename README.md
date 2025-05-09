@@ -214,7 +214,7 @@ Flag :
 
 Flag :
 ```
-flag{SOPHOSBEEPBOOPFLAGINSIGHT}
+SOPHOS{BEEPBOOPFLAGINSIGHT}
 ```
 
 ![Pasted image 20250506125416](https://github.com/user-attachments/assets/8b665080-fbf1-431b-9f48-5edd3d1f07f5)
